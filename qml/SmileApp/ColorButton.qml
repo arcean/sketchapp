@@ -1,9 +1,11 @@
 import QtQuick 1.0
 
 Rectangle {
-    id:picker
+    id: picker
     width:22
     height:22
+
+    signal clicked()
 
     MouseArea {
         id:mousearea
@@ -12,6 +14,7 @@ Rectangle {
         onClicked: {
             canvas.drawColor = picker.color;
             picker.focus = true
+            picker.clicked();
         }
     }
     border.color: focus ? "#eee" : "#444"

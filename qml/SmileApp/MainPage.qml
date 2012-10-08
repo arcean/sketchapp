@@ -4,7 +4,7 @@ import "Utils.js" as Utils
 import "Components"
 
 Page {
-    tools: commonTools
+    //tools: commonTools
 
     PageHeader {
         id: header

@@ -5,7 +5,6 @@
 #include "canvastimer.h"
 #include "context2d.h"
 
-#include "qcanvas.h"
 
 int main(int argc, char *argv[])
 {
@@ -15,8 +14,6 @@ int main(int argc, char *argv[])
     qmlRegisterType<Context2D>("Context2D", 1, 0, "Context2D");
     qmlRegisterUncreatableType<CanvasImage>("CanvasImage", 1, 0, "CanvasImage", QString());
     qmlRegisterUncreatableType<CanvasGradient>("Gradient", 1, 0, "Gradient", QString());
-
-    qmlRegisterType<QCanvas>("QCanvas", 1, 0, "QCanvas");
 
     QmlApplicationViewer viewer;
     viewer.setOrientation(QmlApplicationViewer::ScreenOrientationAuto);

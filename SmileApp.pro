@@ -26,12 +26,13 @@ symbian:TARGET.CAPABILITY += NetworkServices
 # Add dependency to symbian components
 # CONFIG += qtquickcomponents
 
+QT += script
+
 # The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp \
     context2d.cpp \
     canvastimer.cpp \
-    canvas.cpp \
-    qcanvas.cpp
+    canvas.cpp
 
 # Please do not modify the following two lines. Required for deployment.
 include(qmlapplicationviewer/qmlapplicationviewer.pri)
@@ -48,8 +49,7 @@ OTHER_FILES += \
 HEADERS += \
     context2d.h \
     canvastimer.h \
-    canvas.h \
-    qcanvas.h
+    canvas.h
 
 
 

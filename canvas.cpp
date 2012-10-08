@@ -250,4 +250,3 @@ void Canvas::clearInterval(const QScriptValue &handler)
 {
     CanvasTimer::removeTimer(handler);
 }
-

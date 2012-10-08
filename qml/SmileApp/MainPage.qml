@@ -25,7 +25,7 @@ Page {
         anchors.bottom: parent.bottom
         anchors.margins: __MARGIN
 
-        color: "lightblue"
+        color: "lightgray"
 
         Rectangle {
             id: newButton
@@ -36,7 +36,7 @@ Page {
             anchors.bottom: parent.bottom
             anchors.bottomMargin: __MARGIN
 
-            color: "blue"
+            color: newButtonMouseArea.pressed ? "lightblue" : "blue"
 
             Label {
                 anchors.centerIn: parent
@@ -44,6 +44,7 @@ Page {
             }
 
             MouseArea {
+                id: newButtonMouseArea
                 anchors.fill: parent
 
                 onClicked: {

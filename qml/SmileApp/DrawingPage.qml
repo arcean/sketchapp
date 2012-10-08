@@ -35,6 +35,8 @@ Page {
 
     ColorPicker {
         id: colorPicker
+
+        onColorChanged: canvas.drawColor = colorPicker.color;
     }
 
     Rectangle {

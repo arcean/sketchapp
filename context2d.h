@@ -149,7 +149,7 @@ public:
     QVariant strokeStyle() const; // (default black)
     QVariant fillStyle() const; // (default black)
 
-    void setGlobalAlpha(qreal alpha);
+    Q_INVOKABLE void setGlobalAlpha(qreal alpha);
     void setGlobalCompositeOperation(const QString &op);
     void setStrokeStyle(const QVariant &style);
     void setFillStyle(const QVariant &style);
